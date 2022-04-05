@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Sign up</title>
+</head>
+<body>
+ <div class="side">
+     <div class="logo">
+        <svg width="166" height="165" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_2)">
+            <path d="M59 14L50.9 47H43.4L38.55 23.3L33.7 47H26.2L18.75 14H24.65L30.5 43.25L36.3 14H41.85L47.7 43.25L53.5 14H59Z" fill="white"/>
+            <path d="M17.85 38.25C17.85 42.0167 17.35 45.0833 16.35 47.45C15.3833 49.8167 13.5333 51 10.8 51C9.83333 51 8.98333 50.8 8.25 50.4C7.48333 50 7.1 49.4167 7.1 48.65C9.03333 48.65 10.3333 47.8667 11 46.3C11.6667 44.7333 12 42.65 12 40.05V10H17.85V38.25Z" />
+            <path d="M65.5 32.5C65.5 50.1659 50.9565 64.5 33 64.5C15.0435 64.5 0.5 50.1659 0.5 32.5C0.5 14.8341 15.0435 0.5 33 0.5C50.9565 0.5 65.5 14.8341 65.5 32.5Z" fill = "none" stroke="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_2">
+            <rect width="66" height="65" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+     </div>
+ </div>
+ <div class="content">
+    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+    <p>You know you want to.</p>
+    <form action="submitted.html" >
+        <div class="signup">
+        <h2>Let's do this!</h2>
+        <div class="formInput">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="formInput">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div class="formInput">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="formInput">
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone">
+    </div>
+    <div class="formInput">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" id="password" onkeyup='passConfirm()' required>
+    </div>
+    <div class="formInput">
+        <label for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" type="password" name="confirmPassword" onkeyup='passConfirm()' required>
+        
+    </div>
+    <h3 class="passMatch" ></h3>
+</div>
+<button type="submit" id="submitBttn">Create Account</button>
+    </form>
+    
+    <p>Already have an account? <a href="#">Login</a></p>
+ </div>
+</body>
+</html>

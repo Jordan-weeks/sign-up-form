@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    background-color: #F9FAFB;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    
+}
+p{
+    padding: 1em 6em 1em 0em ;
+    line-height: 1.6;
+}
+.side{
+    background-image: url(fredrik-solli-wandem-JODD_tWq7bg-unsplash.jpg);
+    background-size: cover;
+    min-width: 30vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0 0 0 2em;
+   
+}
+.side > div {
+    position: relative;
+  top: 33%;
+  transform: translateY(-33%);
+}
+.logo{
+    min-width: 100%
+ 
+}
+.logo > svg{
+    align-items: center;
+width: 100%;
+background-color: #162f33c5;
+padding: 1em 0;
+
+fill: white;
+}
+.content{
+    min-width: 40vw;   
+    display: flex;   
+    flex-direction: column;
+    padding-left: 1em;
+    
+    
+}
+.signup{
+    background-color: #EEF0EE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: .5em;
+    column-gap: 2em;
+    padding: 1em 10em 1em 1em;
+    margin-left: -1em;
+    
+    
+    
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+    gap: .2em;    
+    width: 40%;
+    
+    
+    }
+    input{
+        font-size: 2rem;
+        border: 2px solid;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    input:invalid{
+    
+    }
+    input:focus{
+        outline: none;
+        /* border-color: greenyellow; */
+    }
+    
+h2{
+    width: 100%;
+    
+}
+button{
+    max-width: 300px;
+    font-size: 2rem;
+    margin: 1em 0em;
+    border-radius: 10px;
+    cursor:pointer;
+    padding: .35em;
+}
+.passMatch{
+color: red;
+height: 1em;
+
+
+
+}
+.noMatch{
+    border-color: red;
+    
+}
+button:disabled{
+   
+}
